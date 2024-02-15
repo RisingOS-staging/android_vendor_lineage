@@ -3,7 +3,8 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Apps
 PRODUCT_PACKAGES += \
-    Backgrounds
+    Backgrounds \
+    Glimpse
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
@@ -81,3 +82,5 @@ PRODUCT_PACKAGES += \
     LineageBlackTheme \
     ThemePicker \
     ThemesStub
+
+PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/mobile
