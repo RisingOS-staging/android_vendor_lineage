@@ -1,0 +1,4 @@
+# Bootanim
+on post-fs-data
+    mkdir /data/misc/bootanim 0777
+    chown system system /data/misc/bootanim
